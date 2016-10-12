@@ -5,7 +5,7 @@
  */
 public class CSVData {
 
-	private double [][] data;
+	private double [][] data;//if static, we cannot make data objects with different data variables
 	private String [] columnNames;
 	
 	public static CSVData readCSVFile(String filename, int numLinesToIgnore, String[]columnNames){
@@ -25,6 +25,50 @@ public class CSVData {
 		
 		
 	}
+	/***
+	 * returns a row
+	 * @param rowIndex index of the row to return
+	 * @return the row we're returning
+	 */
+	public double[] getIndividualRow(int rowIndex){
+		return null;
+	}
+	
+	public double[] getIndividualColumn(int columnIndex){
+		return null;
+	}
+	
+	public double[] getIndividualColumn(String name){
+		return null;
+	}
+	
+	
+	public double[][] getRows(int startIndex, int endIndex){
+		return null;
+	}
+	
+	public double[][] getRows(int [] rowIndexes){
+		return null;
+	}
+	
+	
+	
+	public double[][] getColumns(int startIndex, int endIndex){
+			return null;
+	}
+	
+	public double[][] getColumns(String [] columnNames){
+		return null;
+}
+	
+	public void setIndividualEntry(int rowIndex, int columnIndex, double newValue){
+		
+	}
+	
+	public void saveToFile(String filename){
+		
+	}
+	
 	
 	
 	
